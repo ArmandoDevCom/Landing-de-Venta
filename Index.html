@@ -5,138 +5,238 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="css/estilos.css">
-    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,900&display=swap" rel="stylesheet">
+    <title>Tienda de Sushi</title>
 </head>
 <body>
-<header class="p-3 mb-3 border-bottom">
-    <div class="container">
-      <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
-        <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 link-body-emphasis text-decoration-none">
-          <svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap"><use xlink:href="#bootstrap"></use></svg>
-        </a>
-
-        <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
-          <li><a href="#" class="nav-link px-2 link-secondary">Overview</a></li>
-          <li><a href="#" class="nav-link px-2 link-body-emphasis">Inventory</a></li>
-          <li><a href="#" class="nav-link px-2 link-body-emphasis">Customers</a></li>
-          <li><a href="#" class="nav-link px-2 link-body-emphasis">Products</a></li>
-        </ul>
-
-        <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search" wtx-context="F5A29917-8459-458C-980E-B93F9ADE3976">
-          <input type="search" class="form-control" placeholder="Search..." aria-label="Search" wtx-context="A79A6F4F-16BF-4A32-81A9-E98E9E12670E">
-        </form>
-
-        <div class="dropdown text-end">
-          <a href="#" class="d-block link-body-emphasis text-decoration-none dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-            <img src="https://github.com/mdo.png" alt="mdo" width="32" height="32" class="rounded-circle">
-          </a>
-          <ul class="dropdown-menu text-small">
-            <li><a class="dropdown-item" href="#">New project...</a></li>
-            <li><a class="dropdown-item" href="#">Settings</a></li>
-            <li><a class="dropdown-item" href="#">Profile</a></li>
-            <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="#">Sign out</a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-</header>
-<main>
-        <div class="my-5">
-            <div class="p-5 text-center bg-body-tertiary">
-              <div class="container py-5">
-                <h1 class="text-body-emphasis">Full-width jumbotron</h1>
-                <p class="col-lg-8 mx-auto lead">
-                  This takes the basic jumbotron above and makes its background edge-to-edge with a <code>.container</code> inside to align content. Similar to above, it's been recreated with built-in grid and utility classes.
-                </p>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+              <a class="logosake" href="">
+                <img src="/img/31089239_7775123.svg" alt="">
+              </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Ordena aquí</font></font></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Promociones</font></font></a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                      Menú
+                    </font></font></a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Entradas</a></li>
+                      <li><a class="dropdown-item" href="#">Sopas</a></li>
+                      <li><a class="dropdown-item" href="#">Poke balls</a></li>
+                      <li><a class="dropdown-item" href="#">Kushiage</a></li>
+                      <li><a class="dropdown-item" href="#">Arroz</a></li>
+                      <li><a class="dropdown-item" href="#">Chirashi</a></li>
+                      <li><a class="dropdown-item" href="#">Temakis</a></li>
+                      <li><a class="dropdown-item" href="#">Nigiris</a></li>
+                      <li><a class="dropdown-item" href="#">Sushi balls</a></li>
+                      <li><a class="dropdown-item" href="#">Rollos</a></li>
+                    </ul>
+                  </li>
+                </ul>
+                <form class="d-flex" role="search" wtx-context="0E43AC67-7E76-43D6-8851-1414130E106F">
+                  <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Buscar" wtx-context="5EA8204E-BCBD-4AA2-850F-25A1E47D97F8">
+                  <button class="btn btn-outline-success" type="submit"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Buscar</font></font></button>
+                </form>
+                <button type="button" class="btn btn-danger m-3">Iniciar sesión</button>
               </div>
             </div>
-          </div>
- </main>
+          </nav>
+      </header>
 
- <div class="container text-center">
+    <div class="jumbotron_main">
+            <div>
+              <div>
+                <h1 class="titulo_jumbotron">SUSHI EN CUALQUIER MOMENTO</h1>
+                <h2 class="cta_descargapp"> Descarga nuestra app y obten 50% de descuento + envío gratis en tu primer compra</h2>
+              </div>
+            </div>
+            <div class="contenedor_cta-apps">
+                <a href="">
+                <img class="appstorecta" src="/img/1280px-Download_on_the_App_Store_Badge_ESMX_RGB_blk.svg.png" alt="Descarga en Appstore">
+                </a>
+                <a href="">
+                <img class="playstorecta" src="/img/es-419_badge_web_generic.png" alt="Descarga en Playstore">
+                </a>
+            </div>
+    </div>
+
+
+<div class="container text-center">
     <div class="row">
       <div class="col">
         <div class="card" style="width: 18rem;">
-            <img src="..." class="card-img-top" alt="...">
+            <img src="/img/Productos/autentica-sopa-fideos-asiaticos-tazon-negro.jpg" class="card-img-top" alt="...">
             <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
+              <h5 class="card-title">Sopa de fideo asiatica</h5>
+              <p class="card-text">$185</p>
+              <a href="#" class="btn btn-danger">Ordenar</a>
             </div>
           </div>
       </div>
       <div class="col">
         <div class="card" style="width: 18rem;">
-            <img src="..." class="card-img-top" alt="...">
+            <img src="/img/Productos/disparo-vertical-atun-fresco-salmon-vieira-nigiri-sushi-camarones-palillos.jpg" class="card-img-top" alt="...">
             <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
+              <h5 class="card-title">Nigiri de Mixto</h5>
+              <p class="card-text">$145</p>
+              <a href="#" class="btn btn-danger">Ordenar</a>
             </div>
           </div>
       </div>
       <div class="col">
         <div class="card" style="width: 18rem;">
-            <img src="..." class="card-img-top" alt="...">
+            <img src="/img/Productos/fideos-vista-superior-arreglo-tazon.jpg" class="card-img-top" alt="...">
             <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
+              <h5 class="card-title">Fideos clásicoa</h5>
+              <p class="card-text">$129</p>
+              <a href="#" class="btn btn-danger">Ordenar</a>
             </div>
           </div>
       </div>
       <div class="col">
         <div class="card" style="width: 18rem;">
-            <img src="..." class="card-img-top" alt="...">
+            <img src="/img/Productos/plato-sushi-marisco-fresco-verduras-enrolladas-saludables-generado-ia.jpg" class="card-img-top" alt="...">
             <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
+              <h5 class="card-title">Sushi California</h5>
+              <p class="card-text">$109</p>
+              <a href="#" class="btn btn-danger">Ordenar</a>
             </div>
           </div>
       </div>
       <div class="col">
         <div class="card" style="width: 18rem;">
-            <img src="..." class="card-img-top" alt="...">
+            <img src="/img/Productos/plato-sushi-restaurante-asiatico.jpg" class="card-img-top" alt="...">
             <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
+              <h5 class="card-title">Charola de Sushi</h5>
+              <p class="card-text">$249</p>
+              <a href="#" class="btn btn-danger">Ordenar</a>
             </div>
           </div>
       </div>
       <div class="col">
         <div class="card" style="width: 18rem;">
-            <img src="..." class="card-img-top" alt="...">
+            <img src="/img/Productos/plato-variedad-fresca-rollos-sushi.jpg" class="card-img-top" alt="...">
             <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
+              <h5 class="card-title">Nagiri de Salmón</h5>
+              <p class="card-text">$165</p>
+              <a href="#" class="btn btn-danger">Ordenar</a>
             </div>
           </div>
       </div><div class="col">
         <div class="card" style="width: 18rem;">
-            <img src="..." class="card-img-top" alt="...">
+            <img src="/img/Productos/vista-superior-sabrosa-composicion-fideos-mesa.jpg" class="card-img-top" alt="...">
             <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
+              <h5 class="card-title">Fideo seco chino</h5>
+              <p class="card-text">$95</p>
+              <a href="#" class="btn btn-danger">Ordenar</a>
             </div>
           </div>
       </div>
       <div class="col">
         <div class="card" style="width: 18rem;">
-            <img src="..." class="card-img-top" alt="...">
+            <img src="/img/Productos/vista-superior-delicioso-concepto-sushi.jpg" class="card-img-top" alt="...">
             <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
+              <h5 class="card-title">Mega Mix Asiático</h5>
+              <p class="card-text">$295</p>
+              <a href="#" class="btn btn-danger">Ordenar</a>
             </div>
           </div>
       </div>
     </div>
-  </div>
+</div>
+
+<div>
+    <div>
+        <img src="" class="img_calltoaction" alt="Familia feliz comiendo sushi">
+    </div>
+    <div>
+        <h2>Escribir aqui titulo</h2>
+        <p>Escribir llamada a la acción</p>
+        <p>Escribir descripcion breve</p>
+        <form>
+            <div>
+              <div>
+                <label></label>
+                <input>
+              </div>
+              <div>
+                <button></button>
+              </div>  
+            </div>
+            <p>
+                <a></a>
+            </p>
+        </form>
+    </div>
+</div>
+
+<footer>
+    <div>
+        <div>
+            <a href="">
+                <img src="/img/31089239_7775123.svg" alt="Logo Tienda Sushi Sake">
+            </a>
+            <div>
+                <div>
+                    <a href="">Facebook</a>
+                    <a href="">Twitter</a>
+                    <a href="">Instagram</a>
+                    <a href="">Tiktok</a>
+                    <a href="">Youtube</a>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <div>
+                        <h3>Soporte</h3>
+                        <ul>Atención al cliente</ul>
+                        <ul>Ayuda con mi app</ul>
+                        <ul>FAQs</ul>
+                    </div>
+                    <div>
+                        <h3>Nosotros</h3>
+                        <ul>About</ul>
+                        <ul>Blog</ul>
+                        <ul>Prensa</ul>
+                        <ul>Bolsa de Trabajo</ul>
+                        <ul>Afiliados</ul>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <h3>Legales</h3>
+                        <ul>Politica de Privacidad</ul>
+                        <ul>Términos y Condiciones</ul>
+                        <ul>Política de Reembolsos</ul>
+                    </div>
+                    <div>
+                        <h3>Enlaces Rápidos</h3>
+                        <ul>Paquetes</ul>
+                        <ul>Promociones</ul>
+                        <ul>Paquetes</ul>
+                        <ul>Sucursales</ul>
+                        <ul>Partnes</ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <p>2023 Tienda de Sushi. Todos los derechos reservador.</p>
+        </div>
+    </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>

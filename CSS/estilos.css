@@ -1,6 +1,96 @@
+/* Header */
+
+.logosake {
+    width: 70px;
+}
+
+
+/* Jumbotron */
+.jumbotron_main {
+    background-image: url(/img/almuerzo-restaurante-chino-terraza-verano-dos-hermanas-comen-sushi-palitos-chinos.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: bottom;
+    background-color: #f1f1f1;
+    min-height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.titulo_jumbotron {
+    color: #f1f1f1;
+    font-size: 80px;
+    text-shadow: 3px 3px 3px rgba(0, 0 , 0, 0.5);
+    margin: 30px;
+    text-align: center;
+}
+
+.cta_descargapp {
+    color: #f1f1f1;
+    font-size: 35px;
+    text-shadow: 3px 3px 3px rgba(0, 0 , 0, 0.5);
+    margin: 30px;
+    background-color: rgba(255, 0, 0, 0.732);
+    padding: 5px;
+    text-align: center;
+}
+
+
+.contenedor_cta-apps {
+    display: grid;
+    grid-template-columns:repeat(2, 1fr) ;
+   justify-content: center;
+   align-items: center;
+}
+
+.appstorecta {
+    width: 200px;
+} 
+
+.playstorecta {
+    width: 210px;
+
+}
+
+
+/* Contenedor de Productos */
+
 .row {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(2, 1fr);
     align-items: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    
 }
+
+.col {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.card-text {
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
+/* Diseños Responsivos */
+
+@media (max-width: 768px) {
+    /* Estilos para pantallas más pequeñas */
+  }
+  
+  @media (min-width: 768px) and (max-width: 992px) {
+    /* Estilos para tabletas */
+  }
+  
+  @media (min-width: 992px) {
+    /* Estilos para pantallas grandes (escritorios) */
+  }
+  
