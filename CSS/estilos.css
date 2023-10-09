@@ -97,6 +97,7 @@ a {
 
 .card {
     transition: transform 0.3s ease;
+    width: 100%;
 }
 
 .card:hover {
@@ -108,36 +109,21 @@ a {
 /* Sección de registro */
 
 .contenedor_registro {
-    /* display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    justify-content: space-between;
     align-items: center;
-    justify-content: center;
-    height: 100%;
-    padding: 0;
-    margin: 0;
-    border: 0; */
-    display: flex;
-    flex-direction: row;
-    height: 100vh;
-    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
-}
-
-.img_consurso {
-    height: 100vh;
-    width: 100vh;
-    background-image: url(/img/mujer-joven-hablando-telefono-centro-oficina.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position-y: bottom;
+    height: 100%;   
 }
 
 .imagen_concurso_form {
-    width: 100vh;
+    height: 100%;
+    display: grid;
 }
 
 .contenedor_de_registro_rapido {
     color: white;
-    padding-right: 50px;
+    padding: 50px;
     background-color: rgb(180, 0, 0);
     height: 100%;
     width: 100%;
@@ -165,12 +151,16 @@ a {
 
 .registro_email {
     color: white;
-   
+    width: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
     justify-content: center;
+}
+
+.form-control {
+    width: 100%;
 }
 
 .form-tex {
@@ -192,6 +182,7 @@ a {
     display: flex;
     flex-direction: column;
     padding-top: 50px;
+    background-color: rgb(221, 221, 221);
 }
 
 .logo_footer {
@@ -257,7 +248,7 @@ a {
 
     @media (max-width: 767px) {
         .jumbotron_main {
-            height: 580px;
+            height: 620px;
             text-align: center;
             padding: 50px;
             background-image: url(/img/almuerzo-restaurante-chino-terraza-verano-dos-hermanas-comen-sushi-palitos-chinos.jpg);
@@ -305,25 +296,13 @@ a {
         }
     
         .contenedor_registro {
+            display: flex;
             flex-direction: column;
-            
             height: auto;
         }
 
         .img_consurso {
-        
-            width: auto;
-            height: 500px;
-            background-image: url(/img/mujer-joven-hablando-telefono-centro-oficina.jpg);
-            background-size: cover;
-            background-repeat: no-repeat;
-            background-position-y: center;
-            background-position-x: center;
-
-        }
-
-        .imagen_concurso_form {
-            width: 100vh;
+            height: 400px;
         }
     
         .contenedor_de_registro_rapido {
@@ -389,23 +368,34 @@ a {
         .playstorecta {
             width: 180px;
         }
+
+        .row {
+            grid-template-columns: 50% 50%;
+        }
     
         .card {
-            width: 80%;
+            width: 50%;
             margin: 0 auto 20px;
         }
     
         .contenedor_registro {
-            flex-direction: row;
+            display: grid;
+            grid-template-columns: 50% 50%;
             height: auto;
         }
     
         .img_consurso {
-            height: 400px;
+            height: 100%;
+            object-fit: cover;
+            object-position: 50% 50%;
         }
     
         .contenedor_de_registro_rapido {
-            padding: 40px;
+            padding: 50px;
+        }
+
+        .cta_registro_rapido {
+            font-size: 30px;
         }
     }
     
