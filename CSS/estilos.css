@@ -1,3 +1,10 @@
+/* General */
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
 /* Header */
 
 .logosake {
@@ -48,11 +55,20 @@
 
 .appstorecta {
     width: 200px;
-} 
+    transition: transform 0.3s ease;
+}
+
+.appstorecta:hover {
+    transform: scale(1.1);
+}
 
 .playstorecta {
     width: 210px;
+    transition: transform 0.3s ease;
+}
 
+.playstorecta:hover {
+    transform: scale(1.1);
 }
 
 
@@ -79,18 +95,263 @@
     font-weight: bold;
 }
 
+.card {
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.5);
+    transform: scale(1.1);
+}
+
+
+/* Sección de registro */
+
+.contenedor_registro {
+    /* display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    border: 0; */
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+}
+
+.img_consurso {
+    height: 100vh;
+    width: 100vh;
+    background-image: url(/img/mujer-joven-hablando-telefono-centro-oficina.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: bottom;
+}
+
+.imagen_concurso_form {
+    width: 100vh;
+}
+
+.contenedor_de_registro_rapido {
+    color: white;
+    padding-right: 50px;
+    background-color: rgb(180, 0, 0);
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    margin: 0;
+}
+
+.cta_registro_rapido {
+    font-size: 35px;
+    font-weight: 900;
+}
+
+
+.form-control {
+    width: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.registro_email {
+    color: white;
+   
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.form-tex {
+    color: white; 
+}
+
+
+.contenedor_email {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* Footer */
+
+.contenedor_footer {
+    display: flex;
+    flex-direction: column;
+    padding-top: 50px;
+}
+
+.logo_footer {
+    width: 150px;
+}
+
+.subcontenedor_footer {
+    display: flex;
+    flex-direction: row;
+   justify-content: space-evenly
+}
+
+.subcontenedor_footer1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.subcontenedor_footer2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.minicontenedor_footer {
+    display: flex;
+    flex-direction: row;
+}
+
+.minisubcontenedor {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    padding: 15px;
+}
+
+/* .minisubcontenedor h3 {
+    text-align: right;
+} */
+
+/* .minisubcontenedor ul {
+    text-align: left;
+} */
+
+.divSeparador {
+    border-top: 1px solid #ccc;
+    margin-top: 20px; 
+    margin-bottom: 20px;
+}
+
+.copyright {
+    text-align: center;
+}
+
+.autor {
+    color: red;
+    size: bold;
+}
 
 /* Diseños Responsivos */
 
-@media (max-width: 768px) {
-    /* Estilos para pantallas más pequeñas */
-  }
+
+    @media (max-width: 767px) {
+        .jumbotron_main {
+            min-height: auto;
+            text-align: center;
+            padding: 50px;
+        }
+    
+        .titulo_jumbotron {
+            font-size: 36px;
+        }
+    
+        .cta_descargapp {
+            font-size: 24px;
+            margin: 20px;
+        }
+    
+        .contenedor_cta-apps {
+            grid-template-columns: 1fr;
+            gap: 20px;
+            margin: 20px;
+        }
+    
+        .appstorecta,
+        .playstorecta {
+            width: 150px;
+        }
+    
+        .row {
+            grid-template-columns: 1fr;
+        }
+    
+        .col {
+            text-align: center;
+        }
+    
+        .card {
+            width: 80%;
+            margin: 0 auto 20px;
+        }
+    
+        .contenedor_registro {
+            flex-direction: column;
+            padding: 20px;
+            height: auto;
+        }
+    
+        .img_consurso {
+            height: 300px;
+            background-position: center;
+        }
+    
+        .contenedor_de_registro_rapido {
+            padding: 20px;
+        }
+    
+        .form-control {
+            width: 100%;
+        }
+    
+        .logo_footer {
+            width: 100px;
+        }
+    }
+    
   
-  @media (min-width: 768px) and (max-width: 992px) {
-    /* Estilos para tabletas */
-  }
   
-  @media (min-width: 992px) {
-    /* Estilos para pantallas grandes (escritorios) */
-  }
+ 
+    @media (min-width: 768px) and (max-width: 991px) {
+        .titulo_jumbotron {
+            font-size: 48px;
+        }
+    
+        .cta_descargapp {
+            font-size: 28px;
+        }
+    
+        .appstorecta,
+        .playstorecta {
+            width: 180px;
+        }
+    
+        .card {
+            width: 80%;
+            margin: 0 auto 20px;
+        }
+    
+        .contenedor_registro {
+            flex-direction: row;
+            height: auto;
+        }
+    
+        .img_consurso {
+            height: 400px;
+        }
+    
+        .contenedor_de_registro_rapido {
+            padding: 40px;
+        }
+    }
+    
   
