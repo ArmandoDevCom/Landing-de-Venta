@@ -253,12 +253,20 @@ a {
 
 /* Diseños Responsivos */
 
+/* Pantallas pequeñas */
 
     @media (max-width: 767px) {
         .jumbotron_main {
-            min-height: auto;
+            height: 580px;
             text-align: center;
             padding: 50px;
+            background-image: url(/img/almuerzo-restaurante-chino-terraza-verano-dos-hermanas-comen-sushi-palitos-chinos.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position-y: center;
+            background-position-x: center;
+            background-color: #f1f1f1;
+            
         }
     
         .titulo_jumbotron {
@@ -271,9 +279,10 @@ a {
         }
     
         .contenedor_cta-apps {
-            grid-template-columns: 1fr;
-            gap: 20px;
-            margin: 20px;
+            display: flex;
+            flex-direction: row;
+            height: 100vh;
+            
         }
     
         .appstorecta,
@@ -283,6 +292,7 @@ a {
     
         .row {
             grid-template-columns: 1fr;
+    
         }
     
         .col {
@@ -296,19 +306,34 @@ a {
     
         .contenedor_registro {
             flex-direction: column;
-            padding: 20px;
+            
             height: auto;
         }
-    
+
         .img_consurso {
-            height: 300px;
-            background-position: center;
+        
+            width: auto;
+            height: 500px;
+            background-image: url(/img/mujer-joven-hablando-telefono-centro-oficina.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position-y: center;
+            background-position-x: center;
+
+        }
+
+        .imagen_concurso_form {
+            width: 100vh;
         }
     
         .contenedor_de_registro_rapido {
-            padding: 20px;
+            padding: 50px;   
         }
     
+        .cta_registro_rapido {
+            font-size: 30px;
+        }
+
         .form-control {
             width: 100%;
         }
@@ -316,10 +341,40 @@ a {
         .logo_footer {
             width: 100px;
         }
+
+        .subcontenedor_footer {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .subcontenedor_footer2 {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .minicontenedor_footer {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            
+        }
+
+        .copyright {
+            text-align: center;
+            font-size: 10px;
+            padding-left: 10px;
+            padding-right: 10px;
+            padding-bottom: 10px;
+        }
+        
+        .autor {
+            color: red;
+            size: bold;
+        }
     }
     
   
-  
+  /* Pantallas mediana */
  
     @media (min-width: 768px) and (max-width: 991px) {
         .titulo_jumbotron {
